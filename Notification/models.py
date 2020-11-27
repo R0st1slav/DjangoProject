@@ -2,7 +2,10 @@ from django.db import models
 
 
 class TypeDevice(models.Model):
-    name = models.CharField(max_lenght=100)
+    name = models.CharField(max_length=100)
+
+    def __str__(self):
+        return "%s" % self.name
 
 
 class Device(models.Model):
@@ -14,8 +17,4 @@ class Device(models.Model):
     radius = models.IntegerField(default=0)
 
     def __str__(self):
-        return "%s %s" % (self.name, self.address)
-
-
-
-
+        return "%s" % self.name
