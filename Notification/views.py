@@ -1,3 +1,6 @@
 from django.shortcuts import render
+from .models import Device, TypeDevice
 
-# Create your views here.
+def base(request):
+    devices = Device.objects.all()
+    return render(request, 'Notification/base.html', {'devices': devices})
