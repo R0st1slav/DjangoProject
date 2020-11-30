@@ -1,2 +1,42 @@
 *{box-sizing: border-box;}
 
+body{
+    font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+    font-weight: 100;
+    line-height: 1.2em;
+}
+
+
+label{
+    margin-left: 10px;
+}
+
+input, select{
+    display: block;
+    font-size: 11px;
+    padding: 4px 2px;
+    border:solid 1px #aacfe4;
+    width: 100px;
+    margin: 2px 0 20px 10px;
+}
+
+button{
+    width: 70px;
+    padding: 4px 2px;
+    margin: 2px 0 20px 10px;
+}
+
+.element{
+    border: 1px solid #ff0000;
+    display: inline-block;
+    padding: 15px;
+}
+.element h2{
+    margin-bottom: 30px;
+}
+
+.filters{
+    border: 1px solid red;
+    display: inline-block;
+    padding: 15px;
+}
