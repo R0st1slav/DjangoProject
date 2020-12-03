@@ -1,12 +1,14 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    {% for device in devices %}
-        <h2>{{ device.name }}</h2>
-        <p>тип: {{ device.type_device }}</p>
-        <p>адрес: {{ device.address }}</p>
-        <p>ширина: {{ device.latitude }}</p>
-        <p>долгота: {{ device.longitude }}</p>
-        <p>радус действия: {{ device.radius }}</p>
-    {% endfor %}
+        {% for device in devices %}
+            <div class="element">
+                <h2>{{ device.name }}</h2>
+                <p>тип: {{ device.type_device }}</p>
+                <p>адрес: {{ device.address }}</p>
+                <p>ширина: {{ device.latitude }}</p>
+                <p>долгота:     {{ device.longitude }}</p>
+                <p>радус действия: {{ device.radius }}</p>
+            </div>
+        {% endfor %}
 {% endblock %}

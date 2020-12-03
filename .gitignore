@@ -1,5 +1,4 @@
 # Created by .ignore support plugin (hsz.mobi)
 __pycache__
 venv
-db.sqlite3
 .DS_Store

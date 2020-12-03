@@ -1,34 +1,68 @@
 *{box-sizing: border-box;}
 
-body{
+body {
     font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
     font-weight: 100;
     line-height: 1.2em;
 }
 
 
-label{
+.search input {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    width: 300px;
+    background: #f1f1f1;
+}
+
+.search button {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    /*border-left: none;*/
+    cursor: pointer;
+}
+
+.search button:hover {
+  background: #0b7dda;
+}
+
+.search, label, .content h1{
     margin-left: 10px;
 }
 
 input, select{
-    display: block;
-    font-size: 11px;
+    /*display: block;*/
+    font-size: 15px;
     padding: 4px 2px;
-    border:solid 1px #aacfe4;
-    width: 100px;
+    border: solid 1px #aacfe4;
+    border-radius: 5px;
+    width: 150px;
     margin: 2px 0 20px 10px;
+
 }
 
 button{
-    width: 70px;
+    display: inline-block;
+    width: 100px;
     padding: 4px 2px;
-    margin: 2px 0 20px 10px;
+    font-size: 15px;
+}
+.content{
+    position: relative;
 }
 
-.element{
-    border: 1px solid #ff0000;
-    display: inline-block;
+.element {
+    background: #aacfe4;
+    position: relative;
+    display: block;
+    left: 20%;
+    margin: 10px;
+    width: 30%;
     padding: 15px;
 }
 .element h2{
@@ -36,7 +70,7 @@ button{
 }
 
 .filters{
-    border: 1px solid red;
-    display: inline-block;
+    /*border: 1px solid red;*/
+    position: absolute;
     padding: 15px;
 }
